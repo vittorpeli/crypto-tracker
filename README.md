@@ -1,2 +1,2 @@
 # crypto-tracker
-Watch Real-Time Crypto Numbers
+Visualiza Dados de Criptomoedas Ao Vivo
