@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #111827;
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  margin-bottom: 48px;
+}
+
+.search-container h1 {
+  font-size: 3rem;
+  margin: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 18px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.coin-coin,
+.coin-row {
+  display: flex;
+  align-items: center;
+}
+
+.coin-coin {
+  paddin-right: 24px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.coin-symbol {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.coin-percent {
+  width: 80px;
+}
+
+.coin-row {
+  flex-direction: row;
+  justify-items: start;
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  width: 90vw;
+}
+
+.coin-data {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.coin-price {
+  width: 110px;
+}
+
+.coin-volume {
+  width: 220px;
+}
+
+.coin-marketcap {
+  width: 240px;
+}
+
+img {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 16px;
+}
+
+.red {
+  color: #dc2626;
+  filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+  font-weight: 600;
+}
+
+.green {
+  color: #16a34a;
+  filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03))
+    drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+  font-weight: 600;
+}
