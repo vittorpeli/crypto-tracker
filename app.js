@@ -36,17 +36,18 @@ function createCoin(coin) {
         <p class="coin-symbol">${coin.symbol}</p>
       </div>
       <div class="coin-data">
-        <p class="coin-price">$${coin.price}</p>
-        <p class="coin-volume">$${coin["24hVolume"].toLocaleString()}</p>
+        <p class="coin-price">$${new Intl.NumberFormat().format(Number(coin.price).toFixed(2))}</p>
+        <p class="coin-volume">Vol: $${new Intl.NumberFormat().format(Number(coin["24hVolume"]).toFixed(2))}</p>
         <p class="coin-percent ${coin.change < 0 ? "red" : "green"}">
           ${coin.change} %
         </p>
-        <p class="coin-marketcap">Mkt Cap: $ ${coin.marketCap.toLocaleString()}</p>
+        <p class="coin-marketcap">Mkt Cap: $ ${new Intl.NumberFormat().format(Number(coin.marketCap).toFixed(2))}</p>
       </div>
     </div>
   `
     return coinElement
-  }
+}
+
   
 function inputHandler() {
     fetchCoins()
