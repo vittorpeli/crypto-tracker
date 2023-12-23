@@ -1,5 +1,4 @@
 const api = "https://api.coinranking.com/v2/coins"
-const apiKey = "coinranking8be1b9915d9f2338404077e91278d7face49636dbb768991"
   
 const coinContainer = document.querySelector(".coin")
 const searchInput = document.getElementById("search-input")
